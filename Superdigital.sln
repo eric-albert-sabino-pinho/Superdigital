@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Superdigital", "Superdigital\Superdigital.csproj", "{676499A3-2E3D-4C4F-B10A-1BE305840D4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superdigital.Api", "Superdigital\Superdigital.Api.csproj", "{676499A3-2E3D-4C4F-B10A-1BE305840D4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Superdigital.Domain", "Superdigital.Domain\Superdigital.Domain.csproj", "{38A18F78-9612-4B88-A797-E34799DF18C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Superdigital.Repository", "Superdigital.Repository\Superdigital.Repository.csproj", "{D79E31CC-601B-46AE-8303-C87848010D43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Superdigital.Entity", "Superdigital.Entity\Superdigital.Entity.csproj", "{F7F9112B-8BD7-49EB-A61C-A7EE7BA9B061}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Superdigital.Service", "Superdigital.Service\Superdigital.Service.csproj", "{00C3B9E9-8D23-4274-9328-9A2EE4B15A3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Api", "0.Api", "{456C9503-BD3E-4E7D-851C-39F433962413}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Domain", "1.Domain", "{BC944831-34AA-4B0D-8D3B-96BB6C7EC2E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.App", "2.App", "{66EA53FE-CFE7-4899-837D-9BF05CF068B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.CrossCutting", "3.CrossCutting", "{C07267F9-DEF0-4684-B4CB-E98F2680FE4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Model", "4.Model", "{2C7939BC-E043-41AC-A6BE-117409FE72F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Test", "5.Test", "{7409D5B7-D757-4DB9-9A04-AE93DC76AFE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.Documentation", "6.Documentation", "{CA545D35-18B4-462B-9766-B7349BE9EC32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Superdigital.Test", "Superdigital.Test\Superdigital.Test.csproj", "{115794E7-4F1E-4D8C-B366-26AF9D6C13A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +39,37 @@ Global
 		{676499A3-2E3D-4C4F-B10A-1BE305840D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{676499A3-2E3D-4C4F-B10A-1BE305840D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{676499A3-2E3D-4C4F-B10A-1BE305840D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38A18F78-9612-4B88-A797-E34799DF18C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A18F78-9612-4B88-A797-E34799DF18C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A18F78-9612-4B88-A797-E34799DF18C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A18F78-9612-4B88-A797-E34799DF18C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D79E31CC-601B-46AE-8303-C87848010D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79E31CC-601B-46AE-8303-C87848010D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79E31CC-601B-46AE-8303-C87848010D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79E31CC-601B-46AE-8303-C87848010D43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7F9112B-8BD7-49EB-A61C-A7EE7BA9B061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7F9112B-8BD7-49EB-A61C-A7EE7BA9B061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7F9112B-8BD7-49EB-A61C-A7EE7BA9B061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7F9112B-8BD7-49EB-A61C-A7EE7BA9B061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00C3B9E9-8D23-4274-9328-9A2EE4B15A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00C3B9E9-8D23-4274-9328-9A2EE4B15A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00C3B9E9-8D23-4274-9328-9A2EE4B15A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00C3B9E9-8D23-4274-9328-9A2EE4B15A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{115794E7-4F1E-4D8C-B366-26AF9D6C13A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{115794E7-4F1E-4D8C-B366-26AF9D6C13A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{115794E7-4F1E-4D8C-B366-26AF9D6C13A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{115794E7-4F1E-4D8C-B366-26AF9D6C13A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{676499A3-2E3D-4C4F-B10A-1BE305840D4E} = {456C9503-BD3E-4E7D-851C-39F433962413}
+		{38A18F78-9612-4B88-A797-E34799DF18C5} = {BC944831-34AA-4B0D-8D3B-96BB6C7EC2E0}
+		{D79E31CC-601B-46AE-8303-C87848010D43} = {2C7939BC-E043-41AC-A6BE-117409FE72F7}
+		{F7F9112B-8BD7-49EB-A61C-A7EE7BA9B061} = {C07267F9-DEF0-4684-B4CB-E98F2680FE4A}
+		{00C3B9E9-8D23-4274-9328-9A2EE4B15A3E} = {66EA53FE-CFE7-4899-837D-9BF05CF068B2}
+		{115794E7-4F1E-4D8C-B366-26AF9D6C13A2} = {7409D5B7-D757-4DB9-9A04-AE93DC76AFE9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7F294A9-BACE-44CB-8266-4627A475E6F5}

@@ -1,0 +1,11 @@
+﻿CREATE PROCEDURE SP_Consultar_Cliente
+(
+	@ContaCorrente NUMERIC(9)
+)
+AS
+BEGIN
+
+SET NOCOUNT ON
+	SELECT Nome,RG,CPFJ,AGENCIA,CONTA,DIGITO,SALDO FROM cliente WITH(nolock) WHERE CONTA = @ContaCorrente
+END
+GO
